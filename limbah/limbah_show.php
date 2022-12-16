@@ -49,14 +49,7 @@
                         <th>Jenis Limbah</th>
                         <th>Waktu Pengangkutan</th>
                         <th>Keterangan</th>
-                        <?php
-                        include '../koneksi.php';
-                        session_status() === PHP_SESSION_ACTIVE ?: session_start();
-                        $role = $_SESSION['role'];
-                        if ($role === 'admin') {
-                            echo ' <th>Alamat</th>';
-                        }
-                        ?>
+                        <th>Lokasi</th>
                         <th>Jumlah\kg</th>
                         <th>Status</th>
                         <th>Aksi</th>
@@ -86,14 +79,7 @@
                             <td><?php echo $data['jenis_limbah']; ?></td>
                             <td><?php echo $data['waktu_pengangkutan']; ?></td>
                             <td><?php echo $data['keterangan']; ?></td>
-                            <?php
-                            include '../koneksi.php';
-                            session_status() === PHP_SESSION_ACTIVE ?: session_start();
-                            $role = $_SESSION['role'];
-                            if ($role === 'admin') {
-                                echo "<td>" . $data['lokasi'] . "</td>";
-                            }
-                            ?>
+                            <td><?php echo $data['lokasi']?></td>
                             <td><?php echo $data['jumlah']; ?></td>
                             <td><?php echo $data['status_limbah']; ?></td>
 

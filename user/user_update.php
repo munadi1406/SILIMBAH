@@ -40,6 +40,7 @@ if (isset($_POST['id']) && isset($_POST['role'])) {
     $id = $_POST['id'];
     $role = $_POST['role'];
     ubah_role($id, $role);
+    echo '<script>alert("Success...");window.location="' . $base_url . '/dashboard/?page=user-show";</script>';
 }
 
 ?>

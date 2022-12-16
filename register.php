@@ -3,7 +3,7 @@ session_start(); //memulai session
 
 //cek jika sebelumnya sudah ada session level
 //maka redirect ke halaman berdasarkan level si pengguna.
-if (isset($_SESSION["level"])) {
+if (isset($_SESSION["role"])) {
   header('Location: ./dashboard/');
 }
 
@@ -20,7 +20,7 @@ include("prosesLoginRegister.php"); //include proses untuk merespon dari masing-
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Limbah_skincare </title>
+    <title>REGISTER</title>
     <!-- Favicon icon -->
     <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon.png">
     <link href="css/login.css" rel="stylesheet">
