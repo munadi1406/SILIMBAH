@@ -12,5 +12,5 @@ if (!$conn){
 }
 
 //set base_url
-$base_url = "http://localhost/limbah_skincare"; 
+$base_url = "http://localhost/SILIMBAH"; 
 //ketikan nama folder utama anda sesudah http://localhost/(nama folder utama anda).
