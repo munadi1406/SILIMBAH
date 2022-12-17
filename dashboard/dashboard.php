@@ -1,6 +1,13 @@
 <?php
 include '../koneksi.php';
 session_start();
+if (!isset($_SESSION["username"]) && !isset($_SESSION['status'])) {
+	echo '<script>
+                alert("Mohon login dahulu !");
+                window.location="../login.php";
+             </script>';
+	exit;
+}
 ?>
 <div class="card">
    <div class="card-header">

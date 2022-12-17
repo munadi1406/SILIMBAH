@@ -77,14 +77,6 @@ include("prosesLoginRegister.php"); //include proses untuk merespon dari masing-
             </div>
         </div>
     </div>
-
-    <!--**********************************
-        Scripts
-    ***********************************-->
-    <!-- Required vendors -->
-    <script src="./vendor/global/global.min.js"></script>
-    <script src="./js/quixnav-init.js"></script>
-    <!--endRemoveIf(production)-->
 </body>
 
 </html>

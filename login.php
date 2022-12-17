@@ -21,7 +21,7 @@ include("prosesLoginRegister.php"); //include proses untuk merespon dari masing-
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>LOGIN</title>
     <!-- Favicon icon -->
-    <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon.png">
+    <!-- <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon.png"> -->
     <link href="css/login.css" rel="stylesheet">
 
 </head>
@@ -71,15 +71,6 @@ include("prosesLoginRegister.php"); //include proses untuk merespon dari masing-
             </div>
         </div>
     </div>
-
-
-    <!--**********************************
-        Scripts
-    ***********************************-->
-    <!-- Required vendors -->
-    <script src="./vendor/global/global.min.js"></script>
-    <script src="./js/quixnav-init.js"></script>
-    <script src="./js/custom.min.js"></script>
 
 </body>
 
