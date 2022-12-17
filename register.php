@@ -3,7 +3,7 @@ session_start(); //memulai session
 
 //cek jika sebelumnya sudah ada session level
 //maka redirect ke halaman berdasarkan level si pengguna.
-if (isset($_SESSION["role"])) {
+if (isset($_SESSION["status"])) {
   header('Location: ./dashboard/');
 }
 
@@ -40,11 +40,11 @@ include("prosesLoginRegister.php"); //include proses untuk merespon dari masing-
                                     <form method="post">
                                         <div class="form-group">
                                             <label><strong>Username</strong></label>
-                                            <input type="text" class="form-control" id="username" name="username">
+                                            <input type="text" class="form-control" id="username" name="username" required>
                                         </div>
                                         <div class="form-group">
                                             <label><strong>Password</strong></label>
-                                            <input type="password" class="form-control" id="password" name="password" autocomplete="off">
+                                            <input type="password" class="form-control" id="password" name="password" autocomplete="off" required>
                                         </div>
                                         <div class="form-group">
                                             <label><strong>Email</strong></label>
@@ -52,15 +52,15 @@ include("prosesLoginRegister.php"); //include proses untuk merespon dari masing-
                                         </div>
                                         <div class="form-group">
                                             <label><strong>No.Rekening</strong></label>
-                                            <input type="text" class="form-control" id="no_rekening" name="no_rekening">
+                                            <input type="number" class="form-control" id="no_rekening" name="no_rekening" required>
                                         </div>
                                         <div class="form-group">
                                             <label><strong>Alamat</strong></label>
-                                            <input type="text" class="form-control" id="alamat" name="alamat">
+                                            <input type="text" class="form-control" id="alamat" name="alamat" required>
                                         </div>
                                         <div class="form-group">
                                             <label><strong>Telepone</strong></label>
-                                            <input type="text" class="form-control" id="no_telpon" name="no_telpon"><br><br>
+                                            <input type="number" class="form-control" id="no_telpon" name="no_telpon" required><br><br>
                                         </div>
                                         <div class="text-center mt-4">
                                             <button type="submit" name="register" value="Register" class="btn btn-primary btn-block">Sign up</button>

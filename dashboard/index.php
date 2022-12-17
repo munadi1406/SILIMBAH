@@ -7,12 +7,12 @@ session_start();
 include "../koneksi.php";
 include "../prosesLoginRegister.php";
 
-if (!isset($_SESSION["username"])) {
+if (!isset($_SESSION["username"]) && !isset($_SESSION['status'])) {
 	echo '<script>
                 alert("Mohon login dahulu !");
-                window.location="../?page=login";
+                window.location="../login.php";
              </script>';
-	return false;
+	exit;
 }
 ?>
 

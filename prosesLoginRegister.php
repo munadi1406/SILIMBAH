@@ -10,15 +10,13 @@ if (isset($_POST['login'])) {
     $cek = mysqli_num_rows($result);
 
     if ($cek > 0) {
-        // session_start();
-        // echo '<script>alert("oke")</script>';
         $row = mysqli_fetch_assoc($result);
         $_SESSION['user_id'] = $row['id'];
-        $_SESSION['username'] = $row['username'];
         $_SESSION['role'] = $row['role'];
-
         if (password_verify($pass, $row["password"])) {
-            if ($row['status'] == 'active') {
+            if ($row['status'] === 'active') {
+                $_SESSION['username'] = $row['username'];
+                $_SESSION['status'] = $row['status'];
                 header('Location:./dashboard');
             } else {
                 echo '<script>

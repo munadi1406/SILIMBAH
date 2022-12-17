@@ -2,7 +2,7 @@
 session_start(); //memulai session
 //cek jika sebelumnya sudah ada session level
 //maka redirect ke halaman berdasarkan level si pengguna.
-if (isset($_SESSION["role"])) {
+if (isset($_SESSION["status"])) {
     header('Location: ./dashboard');
 }
 
